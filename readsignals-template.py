@@ -19,7 +19,7 @@ class NewDevice(plux.SignalsDev):
             #data returns as an array with two indexes, the first one contains the ADC
             signal = data[0]
             
-            #interpolate data using r.i. equation
+            #interpolate data using relative intesity equation: https://biosignalsplux.com/learn/notebooks/Categories/Pre-Process/unit_conversion_bvp_rev.html
             ri = signal/2**16
             print(ri)          
             
